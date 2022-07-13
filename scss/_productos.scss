@@ -1,0 +1,181 @@
+
+@mixin cardproductos {
+    line-height: 25px;
+            img{
+                width: 100%;
+                border-radius: 5px;
+                &:hover{
+                    padding: 0.3rem;
+                    
+                  
+                    
+                }
+            }
+            width: 80%;
+            padding: 1rem;
+            border-width: 1rem;
+            border-style: initial;
+            border-color: aqua;
+            border-radius: 5px;
+            box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
+            margin-left: 10%;
+}
+
+h2{
+@extend .titulo;
+font-size: 2rem;
+}
+
+h3{
+    color: orangered;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1fr);
+    grid-template-areas:
+    "card1111 card1 card2"
+    ;
+    text-align: center;
+    justify-content: center;
+   
+    padding: 1rem;
+    
+    
+    
+        .card1111{
+            @include cardproductos;
+            grid-template-areas: card;
+            }
+        .card1{
+            @include cardproductos;
+            grid-template-areas: card1;
+            }
+        .card2{
+            @include cardproductos;
+            grid-template-areas: card2;
+            }
+        }
+        
+
+        .cards1{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1fr);
+            grid-template-areas:
+            "card3 card4 card5"
+            ;
+            text-align: center;
+            justify-content: center;
+            
+            padding: 1rem;
+            
+                .card3{
+                    @include cardproductos;
+                    grid-template-areas: card3;
+                    }
+                .card4{
+                    @include cardproductos;
+                    grid-template-areas: card4;
+                    }
+                .card5{
+                    @include cardproductos;
+                    grid-template-areas: card5;
+                    }
+                }
+
+                .cards2{
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: repeat(1fr);
+                    grid-template-areas:
+                    "card6 card7 card8"
+                    ;
+                    text-align: center;
+                    justify-content: center;
+                  padding: 1rem;
+                    padding-bottom: 6rem;
+                    
+                        .card6{
+                            @include cardproductos;
+                            grid-template-areas: card6;
+                            }
+                        .card7{
+                            @include cardproductos;
+                            grid-template-areas: card7;
+                            }
+                        .card8{
+                            @include cardproductos;
+                            grid-template-areas: card8;
+                            }
+                        }
+
+@media screen and (max-width: 576px){
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "card1111" 
+        "card1" 
+        "card2"
+        ;
+        text-align: center;
+        justify-content: center;
+        row-gap: 1rem;
+        width: 80%;
+        margin-left: 10%;
+        padding-bottom: 1rem;
+    }
+        .cards1{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:
+            "card3" 
+            "card4" 
+            "card5"
+            ;
+            text-align: center;
+            justify-content: center;
+            row-gap: 1rem;
+            width: 80%;
+            margin-left: 10%;
+            padding-bottom: 1rem;
+        }
+        .cards2{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:
+            "card6" 
+            "card7" 
+            "card8"
+            ;
+            text-align: center;
+            justify-content: center;
+            row-gap: 1rem;
+            width: 80%;
+            margin-left: 10%;
+            padding-bottom: 1rem;
+        }
+        
+        @mixin cardproductos {
+            line-height: 25px;
+                img{
+                    width: 100%;
+                    border-radius: 10px;
+                    &:hover{
+                        padding: 0,5rem;
+                        border-radius: 5px;
+                    }
+                }
+                width: 50px;
+                
+                background-color: rgba(30, 148, 148, 0.514);
+                border-radius: 15px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        }
+    

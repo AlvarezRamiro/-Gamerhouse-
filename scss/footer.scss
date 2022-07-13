@@ -1,0 +1,122 @@
+.foot{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1fr);
+    grid-template-areas:
+    "logos copy lista"
+    ;
+    text-align: center;
+    justify-content: center;
+   width: 100%;
+   
+   background-color: rgb(177, 204, 234);
+   padding-top: 3rem;
+    .logos{display: flex;
+        width: 30%;
+        
+        margin-left: 20%;
+        grid-template-areas: logos;
+        padding-bottom: 20%;
+        .logo{
+             
+            padding: 1rem;
+            background-color: rgb(22, 86, 251);
+            border-radius: 5px;
+            color: white;
+            margin-left: 10px;
+            &:hover{
+                color: orangered;
+            }
+        }
+    }
+    div{
+        p{
+           
+            color: $blue-color;
+            width: 80%;
+            grid-template-areas: copy;
+        }
+    }
+    
+    .ulfooter{
+        width: 100%;
+    list-style-type: none;
+    text-align: left;
+    a{
+        text-decoration: none;
+    }
+    grid-template-areas: lista;
+    
+}
+}
+
+
+
+@media screen and (max-width: 576px){
+
+    .foot{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "logos "
+        "copy " 
+        "lista";
+        background-color: rgb(177, 204, 234);
+        .logos{
+            width: 50%;
+           display: flex;
+            
+            
+            grid-template-areas: logos;
+            margin-left: 30%;
+            
+            .logo{
+                 
+                padding: 0.4rem;
+                width: 2rem;
+                height: 2.2rem;
+                background-color:  rgb(22, 86, 251);
+                border-radius: 5px;
+                color: white;
+                margin-bottom: 0.5rem;
+                &:hover{
+                    color: orangered;
+                }
+                
+              
+            }
+        }
+        
+        div{
+            p{
+               
+                color: $blue-color;
+                width: 100%;
+                grid-template-areas: copy;
+            }
+            width: 80%;
+            margin-left: 10%;
+            
+            margin-right: 10%;
+        }
+        
+        .ulfooter{
+        list-style-type: none;
+        text-align: center;
+        width: 80%;
+        padding-left: 25%;
+        margin-right: 10%;
+        a{
+            width:100%;
+            text-align: center;
+            text-decoration: none;    
+        }
+        grid-template-areas: lista;
+        padding-bottom: 1rem;
+
+    }
+    
+}
+    }

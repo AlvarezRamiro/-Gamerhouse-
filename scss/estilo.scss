@@ -1,0 +1,80 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: fantasy;
+}
+
+$blue-color:rgb(0, 136, 255) ;
+$violes-color:rgb(191, 93, 226) ;
+$orange-color:orangered ;
+
+@import "header";
+@import "main";
+@import "card";
+@import "footer";
+@import "productos";
+@import "pcarmada";
+@import "iniciosesion";
+@import "contacto";
+
+
+.titulo{
+    text-align: center;
+    padding: 1rem;
+    color: $blue-color;
+    
+    width: 100%;
+}
+
+main{
+    margin-top: 1rem;
+}
+
+.titulogeneral{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: $blue-color;
+    padding-bottom: 0;
+    
+}
+
+.cardtitle{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    color:$blue-color;
+    
+}
+ 
+button{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: $blue-color;
+    &:hover{
+color: $blue-color;
+font-weight: bolder;}
+}
+
+.br{
+    border-radius: 5px;
+}
+
+.hovertitle{
+    &:hover{
+        color: rgb(0, 136, 255) ;
+font-weight: bolder;
+    }
+}
+
+
+
+
+
+

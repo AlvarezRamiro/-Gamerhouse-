@@ -1,0 +1,142 @@
+.formularios{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "form1 form2";
+    justify-content: center;
+    margin-bottom: 4rem;
+   
+    form{
+        div{
+            .formcontacto1{
+                line-height: 30px;
+                width: 70%;
+                    padding: 1rem;
+                    border-width: 1rem;
+                    border-style: initial;
+                    border-color: aqua;
+                    border-radius: 5px;
+                    box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
+                    text-align: center;
+                    margin-left: 15%;
+    grid-area:from1 ;
+    input{
+        width: 90%;
+        margin-left: 5%;
+    }
+    button{
+        margin-top: 2rem;
+    }
+         margin-bottom: 2rem;  
+         margin-top: 2rem;  
+   
+               
+            }
+        }
+    }
+    .formcontacto2{
+        line-height: 30px;
+        width: 70%;
+        
+            padding: 1rem;
+            border-width: 1rem;
+            border-style: initial;
+            border-color: aqua;
+            border-radius: 5px;
+            box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
+            text-align: center;
+            margin-left: 15%;
+            input{
+                width: 90%;
+                margin-left: 5%;
+            }
+            .lbf{
+                width: 20%;
+                margin-left: 25%;
+                
+            }
+            
+            button{
+                margin-top: 2rem;
+            }
+            select{
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+                 margin-bottom: 2rem;  
+                 margin-top: 2rem;  
+   
+grid-area:form2 ;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .formularios{
+        display: grid;
+        grid-template-columns:100%;
+        grid-template-rows:(2, 1fr);
+        grid-template-areas: 
+        "form1" 
+       "form2";
+        justify-content: center;
+        margin-bottom: 4rem;
+       
+
+        form{
+            div{
+                .formcontacto1{
+                    line-height: 30px;
+                    width: 70%;
+                    
+                        padding: 1rem;
+                        border-width: 1rem;
+                        border-style: initial;
+                        border-color: aqua;
+                        border-radius: 5px;
+                        box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
+                        text-align: center;
+        grid-area:from1 ;
+        input{
+            width: 90%;
+            margin-left: 5%;
+            
+        }
+        button{
+            margin-top: 2rem;
+        }
+             margin-bottom: 2rem;  
+             margin-top: 2rem;    
+                }
+            }
+        }
+        .formcontacto2{
+            line-height: 30px;
+        width: 70%;
+        
+            padding: 1rem;
+            border-width: 1rem;
+            border-style: initial;
+            border-color: aqua;
+            border-radius: 5px;
+            box-shadow: rgba(7, 86, 161, 0.868) 0px 5px 15px;
+            text-align: center;
+            input{
+                width: 90%;
+                margin-left: 5%;
+            }
+            .lbf{
+                width: 50%;
+                text-align: left;
+            }
+            select{
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            button{
+                margin-top: 2rem;
+            }
+        }
+    }
+    
+}
